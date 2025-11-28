@@ -1,6 +1,6 @@
 ##  PDF 多人在线文献阅读助手
 
-一款基与MCP、langchain、streamlit、sqlite构建的pdf文献阅读助手，可以识别文献中的公式，将之识别为latex格式，并交给大模型处理。
+一款基与langchain、streamlit、sqlite、Fastapi构建的pdf文献阅读助手，可以识别文献中的公式，将之识别为latex格式，并交给大模型处理。
 
 ## ✨ 特点
 
@@ -13,14 +13,14 @@
 
 
 ### RAG检索
-- **具有历史记忆的RAG** 构建历史记忆的rag，构建双提示词，使得在进行长对话时，有效减少模型的幻觉问题。
+- **具有历史记忆的RAG** 构建历史记忆的rag，且可以进行多人同时在线问答。构建双提示词，使得在进行长对话时，有效减少模型的幻觉问题。
 
 
 
 ## 设置
 
 ### 需求
-1. **API Keys** (您需要有Deepseek与高德mcp的API KEY):
+1. **API Keys** (您需要有Deepseek的API KEY):
     - **Deepseek API Key**: 可点击 [Deepseek Platform](https://platform.deepseek.com/api_keys)
     - **pytesseract.pytesseract.tesseract_cmd**: 该路径为默认为："C:\Users\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
 
